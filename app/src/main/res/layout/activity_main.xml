@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="12"
+    tools:context="com.hw4.clay.boxlunch.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDrinkQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/drinkQ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <CheckBox
+            android:id="@+id/ckDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSaladQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/saladQ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <CheckBox
+            android:id="@+id/ckSalad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </LinearLayout>
+
+    <!-- TODO Create the sandwich size row (with the radiobutton group) using a linear layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSandwichQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/sandwichQ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:text="@string/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="@string/regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </LinearLayout>
+
+    <!-- TODO Create the soup row using a linear layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoupQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/soupQ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <CheckBox
+            android:id="@+id/ckSoup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDesert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/dessertQ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <CheckBox
+            android:id="@+id/ckDesert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+    </LinearLayout>
+
+    <!-- TODO Create the "Calculate my Total" button layout  -->
+    <!-- you may also put this into a linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="placeOrder"
+            android:text="@string/order"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <!--TODO Create the textview that will hold the order message  -->
+    <!-- I put every row into a linear layout, even if there is only one widget -->
+    <!-- be sure to leave enough room for all of the message -->
+    <!-- HINT: use a greater weight than for the other rows -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!-- This is the email button row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="emailReceipt"
+            android:text="@string/emailMsg"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</LinearLayout>

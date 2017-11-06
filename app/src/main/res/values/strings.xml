@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Box Lunch Order</string>
+    <string name="drinkQ">Do you want a soft drink?</string>
+    <string name="saladQ">Do you want a salad?</string>
+    <string name="sandwichQ">Sandwich Size:</string>
+    <string name="soupQ">Would you like soup?</string>
+    <string name="dessertQ">Would you like dessert?</string>
+    <string name="small">Small</string>
+    <string name="regular">Large</string>
+    <string name="order">Calculate My Total</string>
+    <string name="emailMsg">Email my Receipt</string>
+    <string name="yes">(check for yes)</string>
+</resources>
